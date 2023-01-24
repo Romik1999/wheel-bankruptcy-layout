@@ -27,11 +27,19 @@
   line-height: 120%;
   color: #FFFFFF;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 
 .footer__more span {
   color: #3176FC;
   text-decoration: underline;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer__more:hover span {
+  text-decoration: none;
 }
 
 .footer__text {

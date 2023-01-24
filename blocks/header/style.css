@@ -61,6 +61,21 @@
   text-align: center;
   cursor: pointer;
   color: #ffffff;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.auth:hover {
+  color: #d00000;
+}
+
+.auth:hover .auth__icon svg path:first-child {
+  fill: #d00000;
+}
+
+.auth:hover .auth__icon svg path:last-child {
+  stroke: #d00000;
 }
 
 .auth__icon,
@@ -68,6 +83,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.auth__icon svg {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.auth__icon svg path:first-child {
+  fill: #ffffff;
+}
+
+.auth__icon svg path:last-child {
+  stroke: #ffffff;
 }
 
 @media screen and (max-width: 1440px) {

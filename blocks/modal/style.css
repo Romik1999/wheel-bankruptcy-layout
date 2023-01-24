@@ -72,6 +72,22 @@
 
 .modal__content {
   overflow: auto;
+  padding-right: 10px;
+}
+
+.modal__content::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+
+.modal__content::-webkit-scrollbar-track {
+  background: #FFB200;
+  border-radius: 10px;
+}
+
+.modal__content::-webkit-scrollbar-thumb {
+  background-color: #FF3434;
+  border-radius: 10px;
 }
 
 .modal__closer {
@@ -196,10 +212,18 @@
   color: #ffffff;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
   margin-top: 24px;
+  cursor: pointer;
 }
 
 .modal__link span {
   text-decoration: underline;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.modal__link:hover span {
+  text-decoration: none;
 }
 
 .modal__items {
