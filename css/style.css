@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
   font-family: UniNeue;
   font-display: swap;
@@ -941,6 +943,10 @@ main {
   opacity: 0;
 }
 
+.modal-form__checkbox:checked ~ .modal-form__icon:before {
+  opacity: 1;
+}
+
 .modal-form__icon {
   min-width: 10px;
   width: 10px;
@@ -951,6 +957,21 @@ main {
   border-radius: 1px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: relative;
+}
+
+.modal-form__icon:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 15px;
+  height: 17px;
+  color: #ffffff;
+  content: "✓";
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .modal-form__text {
